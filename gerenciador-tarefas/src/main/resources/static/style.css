@@ -1,0 +1,142 @@
+/*  ESTILO GERAL  */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", Arial, sans-serif;
+    background: linear-gradient(135deg, #eef2ff, #dbeafe);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  CONTAINER PRINCIPAL  */
+.container {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 40px 30px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/*  CABEÇALHO */
+header h1 {
+    color: #2563eb;
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+/* FORMULÁRIO */
+.form-card {
+    margin-bottom: 30px;
+}
+
+#task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#task-form input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+#task-form input:focus {
+    border-color: #2563eb;
+}
+
+.btn {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #1e40af;
+}
+
+/* LISTA DE TAREFAS */
+.list-card {
+    text-align: left;
+}
+
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.list-header h2 {
+    color: #1e3a8a;
+    font-size: 1.2rem;
+}
+
+.list-header span {
+    background: #2563eb;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+}
+
+/*  TAREFAS */
+.tasks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tasks li {
+    background: #f1f5f9;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.tasks li:hover {
+    background: #e0e7ff;
+}
+
+/*  RESPONSIVIDADE */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 25px 20px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    #task-form input, .btn {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+
+    .list-header h2 {
+        font-size: 1rem;
+    }
+}

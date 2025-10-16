@@ -1,12 +1,12 @@
 package com.gerenciador.tarefas.gerenciador_tarefas.model;
-import jakarta.persistence.*;
-
+import
+        jakarta.persistence.*;
 import java.time.LocalDateTime;
+
 @Entity
 @Table (name = "tabela")
 
 public class Tarefa {
-
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

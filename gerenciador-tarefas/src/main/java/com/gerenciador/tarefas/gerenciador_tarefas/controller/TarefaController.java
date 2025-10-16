@@ -4,10 +4,9 @@ import com.gerenciador.tarefas.gerenciador_tarefas.model.Tarefa;
 import com.gerenciador.tarefas.gerenciador_tarefas.repository.TarefaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 import java.util.Optional;
-
+@CrossOrigin(origins = "http://localhost:63342")
 
 @RestController
 @RequestMapping("/tarefas")
