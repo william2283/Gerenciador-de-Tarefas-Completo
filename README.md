@@ -10,7 +10,8 @@ Um gerenciador de tarefas simples, feito em Java Spring Boot (backend) e HTML/CS
 ## Como Rodar
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/william2283/Projeto-Backend---Gerenciador-de-Tarefas.git
+   git clone  https://github.com/william2283/Gerenciador-de-Tarefas-Completo.git
+   
 Abra no IntelliJ IDEA.
 Configure seu banco de dados MySQL no application.properties
 Rode a aplicação (GerenciadorDeTarefasApplication)
