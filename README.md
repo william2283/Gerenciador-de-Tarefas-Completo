@@ -1,53 +1,25 @@
-🧩 Projeto Backend - Gerenciador de Tarefas (Spring Boot + MySQL)
-📘 Descrição do Projeto
+# Gerenciador de Tarefas
+Um gerenciador de tarefas simples, feito em Java Spring Boot (backend) e HTML/CSS/JS (frontend). Permite criar, atualizar, listar e deletar tarefas.
 
-Este projeto é um CRUD completo (Create, Read, Update e Delete) desenvolvido em Java com Spring Boot.
-O objetivo é gerenciar tarefas (criar, listar, atualizar e excluir), com integração total ao banco de dados MySQL.
-Foi criado de forma didática, com separação de camadas e boas práticas de desenvolvimento backend.
+## Tecnologias
+- Java 23
+- Spring Boot 3
+- MySQL
+- HTML, CSS, JavaScript
 
-Tecnologias
+## Como Rodar
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/william2283/Projeto-Backend---Gerenciador-de-Tarefas.git
+Abra no IntelliJ IDEA.
+Configure seu banco de dados MySQL no application.properties
+Rode a aplicação (GerenciadorDeTarefasApplication)
+Abra o frontend em src/main/resources/static/index.html no navegador
 
-Java 17+
-Spring Boot
-Spring Data JPA
-MySQL
-Maven
-IntelliJ IDEA
-
-Estrutura do Projeto:
-
-controller/   -> Endpoints da API
-model/        -> Representa a tabela do banco (Tarefa)
-repository/   -> Acesso ao banco de dados
-ProjetoGrandeApplication.java -> Classe principal
-
-Endpoints:
-
-| Método | Endpoint      | Descrição                 |
-| ------ | ------------- | ------------------------- |
-| GET    | /tarefas      | Lista todas as tarefas    |
-| POST   | /tarefas      | Cria nova tarefa          |
-| PUT    | /tarefas/{id} | Atualiza tarefa existente |
-| DELETE | /tarefas/{id} | Deleta tarefa             |
+## Funcionalidades
+- Adicionar tarefas com título e descrição
+- Listar todas as tarefas
+- Atualizar tarefas existentes
+- Deletar tarefas
 
 
-Exemplo JSON:
-
-{
-  "titulo": "Estudar Spring Boot",
-  "descricao": "Fazer CRUD completo",
-  "concluida": false
-}
-
-Como Executar:
-
-1-Clone o repositório:
-2-git clone https://github.com/william2283/Projeto-Backend---Gerenciador-de-Tarefas.git
-3-Configure o banco MySQL no application.properties
-4-Rode a classe ProjetoGrandeApplication.java
-5-Teste os endpoints com Postman ou Insomnia
-
-Observações:
-
-Projeto simples, com controller acessando o repository diretamente.
-Ideal para aprendizado e projetos iniciais.
